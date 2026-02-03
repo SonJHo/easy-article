@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Easy Article</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-9 col-md-11">
+
+            <!-- 헤더 영역 -->
+            <div class="text-center mt-5 mb-4">
+                <h2 class="fw-bold text-primary">어려운 뉴스, 쉽게 읽자</h2>
+                <p class="text-muted mt-2">
+                    복잡한 정치·사회 기사를<br class="d-md-none">
+                    <span class="fw-semibold">맥락과 용어 중심으로</span> 풀어드립니다.
+                </p>
+            </div>
+
+            <!-- 입력 카드 -->
+            <div class="card shadow-sm border-0">
+                <div class="card-body p-4 p-md-5">
+                    <form th:action="@{/result}" method="post" onsubmit="return validateArticle();">
+                        <div class="mb-3">
+                            <textarea
+                                    id="article"
+                                    class="form-control"
+                                    rows="11"
+                                    name="article"
+                                    placeholder="기사 붙여넣기"
+                                    style="resize: none;"></textarea>
+                        </div>
+                        <div id="errorMessage" class="alert alert-danger py-2 small d-none" role="alert"></div>
+                        <div class="d-grid mt-3">
+                            <button type="submit" class="btn btn-primary btn-lg">쉽게 풀어보기</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script th:src="@{/js/article.js}"></script>
+
+</body>
+</html>
