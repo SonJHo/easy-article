@@ -10,7 +10,8 @@
 - **개발 기간**: 2026.01 ~ 2026.02
 - **프로젝트 유형**: 개인 프로젝트
 ---
-application/miri-canvas-node
+<img width="1302" height="1246" alt="image" src="https://github.com/user-attachments/assets/59f99867-33ca-4f9f-9a6a-0c044a1b477b" />
+
 ---
 
 
@@ -69,3 +70,4 @@ application/miri-canvas-node
 - 사회·정치 뉴스에 대한 진입 장벽 완화
 - 핵심 중심 정보 제공을 통한 빠른 이슈 파악
 - 뉴스 소비에 대한 부담 감소
+
